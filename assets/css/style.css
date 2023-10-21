@@ -1,0 +1,874 @@
+/* Global Style Code is here */
+
+a {
+  text-decoration: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.active {
+  background-color: #007ec6 !important;
+  border: none;
+  color: #fff !important;
+}
+
+/* ===== Header Part Style Heres */
+nav {
+  background-color: #efefef;
+}
+
+.dropdown-menu.show {
+  margin-left: -147px !important;
+  margin-top: 10px;
+}
+
+i.fa-solid.fa-bars {
+  color: #007ec6;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+i.fas.fa-search {
+  color: #fff;
+  padding: 8px;
+  background-color: #007ec6;
+  border-radius: 50%;
+}
+
+/* ===== Header Part Style End Heres */
+
+/* ==== Here Imge Stle Here */
+
+.hero__img {
+  min-height: 650px;
+  background-image: url("../img//Hero_img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ==== Here Imge Stle Here */
+
+/* ==== Book Details Start Here */
+.book_details {
+  min-height: 200px;
+  background-color: #d5d5d5;
+  transform: translateY(-180px);
+  border-radius: 30px !important;
+}
+
+.btn__book {
+  background: #fff;
+  border: none;
+  border-radius: 19px;
+  padding: 20px 50px;
+  transform: translateY(-40px);
+  font-weight: 600;
+  font-size: 20px;
+  outline: none;
+  color: #007ec6;
+}
+
+.btn__book:hover {
+  background: #007ec6;
+  color: #fff;
+}
+
+button#btn__book {
+  padding: 20px 79px;
+}
+
+.btn__manage {
+  background: #ffffff;
+  border-radius: 19px;
+  padding: 20px 20px;
+  transform: translateY(-40px);
+  font-weight: 700;
+  font-size: 25px;
+  border: none;
+  color: #007ec6;
+}
+
+div#single__trip_way {
+  margin-left: 30px !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.dirc-1 {
+  width: 50%;
+}
+
+.single__trip_way {
+  display: block;
+}
+
+.arrival__depart__form {
+  font-size: 14px;
+}
+
+.select_options > select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: gray;
+  font-weight: 300 !important;
+  cursor: pointer;
+}
+
+.arrival__options {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.select-options li:first-child {
+  display: none !important;
+}
+
+select#arrivla_place,
+select#depart_place {
+  border: none;
+  outline: none;
+  color: gray;
+  background-color: transparent;
+  padding: 20px 0px;
+  border-radius: 20px;
+  padding-left: 45px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.arrival__option_selection::before,
+.depart__option_selection::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  color: gray;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+.date__picker::before {
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  color: gray;
+  margin-right: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 44px;
+  transform: translateY(-50%);
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.trip__info {
+  font-size: 20px;
+  color: gray;
+}
+
+#reservetionn__area {
+  display: block;
+}
+
+#search__with__ticket {
+  display: none;
+}
+
+.search__submit {
+  margin-top: 30px;
+}
+
+/* Multycity Visitor Style  */
+
+.multycity__visitor {
+  display: none;
+}
+
+input[type="text"] {
+  padding: 30px 20px 20px;
+  border-radius: 10px;
+}
+
+.reservation__numbber {
+  position: relative;
+  left: 28px;
+  top: 40px;
+}
+
+.reservation__numbber p {
+  color: skyblue;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* ==== Book Details End Style Here */
+
+.faw {
+  padding: 200px 0px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+}
+
+.form__group {
+  width: 50%;
+  position: relative;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+/* .select-styled:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+  } */
+.select-styled:hover {
+  background-color: transparent;
+}
+
+.select-styled:active:after,
+.select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f4f4f4;
+  color: #00000063;
+}
+
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 10px;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.select-options li:hover,
+.select-options li.is-selected {
+  color: #000;
+  background: #fff;
+}
+
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+.select-options::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  height: 20px;
+  width: 20px;
+  left: -1px;
+  top: -20px;
+
+  z-index: 999999;
+}
+
+.depart__option_selection .select-options::after {
+  right: 0px;
+  left: auto;
+  top: -20px;
+  z-index: 999999;
+}
+
+.trip__options {
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.select_options {
+  position: relative;
+  margin-right: 30px !important;
+}
+
+.trip__options select {
+  background: transparent;
+  border: none;
+  padding-right: 30px;
+}
+
+.trip__options .select-options {
+  top: 0;
+  position: absolute;
+  min-width: 140px;
+}
+
+.trip__options .select-options li {
+  margin: 0;
+  padding: 6px 0;
+}
+
+.trip__options .select_options::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  color: gray;
+  cursor: pointer;
+  padding-right: 0;
+  top: 2px;
+  position: absolute;
+  right: -20px;
+  z-index: 999;
+}
+
+.button__responsive {
+  display: none !important;
+}
+
+.trip__options .select-options::after {
+  display: none;
+}
+
+.button__responsive {
+  display: none;
+}
+
+.pesengerCheck_Cupon .form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.pesengerCheck_Cupon .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.pesengerCheck_Cupon .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pesengerCheck_Cupon .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #b7b7b7;
+  box-shadow: none;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+#qunt_travelr {
+  cursor: pointer;
+}
+
+.pesengerCheck_Cupon .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 6px;
+  height: 14px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.pesengerCounter {
+  position: absolute;
+  top: 120%;
+  right: 0%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  padding: 48px 38px 0 38px;
+  min-width: 420px;
+  z-index: 99;
+  color: #000;
+}
+
+.pSingleCount {
+  border-bottom: 1px solid #b7b7b7;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.pTitle {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.pTitle span {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pCounter {
+  gap: 0 15px;
+}
+
+.pCounter span {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.countIcon {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.countIcon i {
+  font-size: 15px;
+}
+
+.countIcon.disabled {
+  opacity: 0.3;
+  cursor: no-drop;
+}
+
+.chekBox {
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+form.pesengerCheck_Cupon {
+  flex-direction: column;
+  align-items: unset;
+}
+
+.promoCode label {
+  font-size: 16px;
+  color: #999999;
+  padding-bottom: 10px;
+}
+
+.promoCode input {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #b7b7b7;
+  border-radius: 4px;
+  padding: 10px 15px;
+  color: #000000;
+  font-size: 18px;
+  width: 100%;
+}
+
+.rightArrow {
+  padding-bottom: 15px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: end;
+}
+
+.rightArrow i {
+  height: 30px;
+  width: 30px;
+  background: #0080cc;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.rightArrow i:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.inner__form {
+  height: 100%;
+}
+
+.inner__form form {
+  height: 100%;
+}
+
+.inner__form .form__group {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+}
+
+.inner__form input {
+  height: 100%;
+  width: 100%;
+  padding-left: 70px;
+  background: transparent;
+  margin-top: -6px;
+}
+
+.inner__form .btn__search,
+.search__submit .btn__search {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #007ec6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner__form .btn__search i,
+.search__submit .btn__search i {
+  background-color: transparent;
+}
+
+button#adding_trip {
+  border: 1px solid #007ec6 !important;
+  color: #007ec6 !important;
+  margin: 10px 0px !important;
+  background: transparent !important;
+}
+
+button#search_with_ticket_number {
+  background: #ffff;
+  color: #007ec6;
+  border: none;
+  outline: none;
+}
+
+button#add__flight__search {
+  padding: 15px 55px;
+  background-color: #007ec6;
+}
+
+button#search_with_reserv_number {
+  background: #ffff;
+  color: #007ec6;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .arrival__option_selection {
+    border: 0px !important;
+  }
+
+  .arrival__options {
+    margin-top: 58px;
+  }
+
+  .dirc {
+    position: absolute;
+    background-color: #fff;
+    top: 100px;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .dirc-1 {
+    position: absolute;
+    background-color: #fff;
+    top: 25px;
+    width: 90% !important;
+    border-radius: 20px;
+  }
+
+  div#single__trip_way {
+    margin: 20px !important;
+  }
+
+  .book_details.shadow.pb-4 {
+    min-height: 500px;
+  }
+
+  .button__responsive {
+    display: block !important;
+  }
+
+  .trip__options {
+    display: none;
+  }
+
+  .inner__form .btn__search,
+  .search__submit .btn__search {
+    display: none;
+  }
+
+  .book__engine {
+    transform: translateY(150px) !important;
+    padding: 0px 0px !important;
+    margin: 0px 0px !important;
+    border-radius: 0px !important;
+  }
+
+  .book_details {
+    border-radius: 0px !important;
+  }
+
+  .hero__img {
+    min-height: 250px;
+    background-image: url(../img//Hero_img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .btn__book {
+    padding: 10px 20px !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    transform: translateY(-30px);
+  }
+
+  .book_details {
+    padding: 0 0px !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+}
+.booking_form {
+  background: #d7d7d7;
+}
+.booking_form .nav-pills {
+  gap: 0.5rem;
+  margin-bottom: 25px;
+  padding-inline: 1.5rem;
+}
+.booking_form .nav-pills li,
+.booking_form .tab-content .btn-toggler.btn-toggler-trip .btn {
+  flex: 1 auto;
+  text-wrap: nowrap;
+}
+.booking_form .nav-pills li .nav-link {
+  width: 100%;
+  min-height: 36pt;
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 10pt;
+  margin-top: -23px;
+  background: #fff;
+  color: #007ec8;
+}
+.booking_form .nav-pills li .nav-link.active {
+  background: #007ec8;
+}
+.booking_form .tab-content {
+  padding-inline: 2.5rem;
+}
+.booking_form .tab-content .active {
+  background: transparent !important;
+}
+.booking_form .tab-content .btn-toggler .btn-outline-light {
+  border: 1px solid #fff;
+  color: #fff;
+  min-height: 22pt;
+  border-radius: 25px;
+  font-size: 10pt;
+  font-weight: bold;
+  padding-inline: 1.25rem;
+  background: transparent !important;
+  margin-bottom: 20px;
+}
+.booking_form .tab-content .btn-toggler .btn-outline-light.active {
+  background: #007ec8 !important;
+  border: 1px solid #007ec8;
+  color: #fff;
+}
+.booking_form .tab-content .form-input {
+  background: #fff;
+  border-radius: 30pt;
+  padding: 5pt 18pt 7pt;
+}
+.booking_form .tab-content .form-input label {
+  font-size: 7pt;
+  color: #007ec8;
+  font-weight: bold;
+  opacity: 70%;
+}
+.booking_form .tab-content .form-input .form-control {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 11pt;
+  color: #000;
+  opacity: 27%;
+  font-weight: bold;
+  margin-top: -2pt;
+  border-radius: 0;
+}
+.booking_form .tab-content .form-input .form-control:focus,
+.form-input-trip .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.booking_form .tab-content .form-input-trip {
+  position: relative;
+}
+.booking_form .tab-content .form-input-trip .form-icon {
+  color: rgb(0 0 0 / 27%);
+  position: absolute;
+  left: 10pt;
+  top: 0;
+  z-index: 9;
+  margin-top: 13pt;
+}
+.booking_form .tab-content .form-input-trip .form-control {
+  padding: 9pt 18pt 13px 27pt;
+  border-radius: 30px !important;
+  color: rgb(0 0 0 / 27%);
+  font-weight: bold;
+  border: none;
+}
+.booking_form .tab-content .form-input-trip .form-control::placeholder {
+  color: rgb(0 0 0 / 27%);
+}
+.booking_form .tab-content .form-input-trip .select-options::after {
+  display: none;
+}
+.booking_form .tab-content .form-input-trip.form-input-trip-multi {
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+}
+.booking_form
+  .tab-content
+  .form-input-trip.form-input-trip-multi
+  .form-control {
+  border-radius: 30px !important;
+}
+.booking_form .tab-content .form-input-trip.form-input-trip-multi:after {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 1px;
+  background: #d7d7d7;
+  left: 50%;
+  top: 15%;
+}
+.booking_form .tab-content .btn-toggler.btn-toggler-trip .btn {
+  margin: 20px 0 0;
+}
+.booking_form .tab-content .btn-search {
+  color: #fff;
+  padding: 10pt 50pt;
+  background: #007ec6 !important;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20pt !important;
+}
+.multi-icon {
+  margin: 0 auto 1rem;
+  color: #007ec6;
+  width: 15pt;
+  border: 2px solid #007ec6;
+  height: 15pt;
+  border-radius: 100%;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 7pt;
+  cursor: pointer;
+}
+#pesengerSelectbox_mobile {
+  width: 100%;
+  top: 100%;
+}
+.countInput {
+  width: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 !important;
+}
+@media (max-width: 575.98px) {
+  .booking_form .nav-pills {
+    padding-inline: 0.5rem;
+  }
+  .booking_form .tab-content {
+    padding-inline: 1rem;
+  }
+  #pesengerSelectbox_mobile {
+    min-width: 100%;
+    padding: 10px 20px;
+  }
+  .booking_form
+    .tab-content
+    .form-input-trip.form-input-trip-multi
+    .form-control {
+    text-wrap: wrap;
+  }
+}

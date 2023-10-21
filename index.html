@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Air</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="Company Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item humburg dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Item 1</a>
+                  <a class="dropdown-item" href="#">Item 2</a>
+                  <a class="dropdown-item" href="#">Item 3</a>
+                  <a class="dropdown-item" href="#">Item 4</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section End here -->
+
+    <section>
+      <!-- Hero Section Image Here -->
+      <div class="hero__img"></div>
+      <!-- Hero Section Image End here -->
+
+      <!-- Book Engine Section -->
+      <div class="book__engine container d-none d-md-block">
+        <!-- Book Details Start Here -->
+        <div class="row">
+          <div class="col-md-12 mx-auto">
+            <div class="book_details shadow pb-4">
+              <!-- Book Button Here -->
+              <div class="action__area d-flex justify-content-center">
+                <button id="btn__book" class="btn btn__book active mx-4">
+                  BOOK A TRIP
+                </button>
+                <button id="btn__manage" class="btn btn__book mx-4">
+                  MANAGE BOOKING
+                </button>
+              </div>
+              <!-- Book Button End Here -->
+              <div id="bookDiv">
+                <div class="book__trip__menu">
+                  <!-- Trip Option Start Here -->
+                  <div class="trip__options">
+                    <div class="row">
+                      <div class="col-md-6 mx-auto">
+                        <div
+                          class="inner__option mx-auto d-flex justify-content-center"
+                        >
+                          <!-- Travel Option start here -->
+                          <div class="select_options mx-2">
+                            <select name="trip" id="trip">
+                              <option value="">Select trip</option>
+                              <option value="one way">One Way</option>
+                              <option value="round trip">Round Trip</option>
+                              <option value="Multy-city">Multi-city</option>
+                            </select>
+                          </div>
+
+                          <div class="select_options d-flex mx-2">
+                            <span id="qunt_travelr">Select Passenger</span>
+                            <div
+                              id="pesengerSelectbox"
+                              class="pesengerSelectbox d-none"
+                            >
+                              <div class="pesengerCounter">
+                                <div class="pessengerAge">
+                                  <div
+                                    class="pSingleCount d-flex justify-content-between align-items-center"
+                                  >
+                                    <div class="pTitle">ADULT(S)</div>
+                                    <div
+                                      class="pCounter d-flex align-items-center"
+                                    >
+                                      <span class="countIcon"
+                                        ><i class="fas fa-minus"></i
+                                      ></span>
+                                      <span>1</span>
+                                      <span class="countIcon"
+                                        ><i class="fas fa-plus"></i
+                                      ></span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="pessengerAge">
+                                  <div
+                                    class="pSingleCount d-flex justify-content-between align-items-center"
+                                  >
+                                    <div class="pTitle">
+                                      CHILD(REN)<br /><span
+                                        >From 2 to 12 year(s) old</span
+                                      >
+                                    </div>
+                                    <div
+                                      class="pCounter d-flex align-items-center"
+                                    >
+                                      <span class="countIcon"
+                                        ><i class="fas fa-minus"></i
+                                      ></span>
+                                      <span>1</span>
+                                      <span class="countIcon"
+                                        ><i class="fas fa-plus"></i
+                                      ></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="pessengerAge">
+                                  <div
+                                    class="pSingleCount d-flex justify-content-between align-items-center"
+                                  >
+                                    <div class="pTitle">
+                                      INFANT(S)<br /><span
+                                        >Until 2 year(s) old</span
+                                      >
+                                    </div>
+                                    <div
+                                      class="pCounter d-flex align-items-center"
+                                    >
+                                      <span class="countIcon disabled"
+                                        ><i class="fas fa-minus"></i
+                                      ></span>
+                                      <span>1</span>
+                                      <span class="countIcon"
+                                        ><i class="fas fa-plus"></i
+                                      ></span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <form class="pesengerCheck_Cupon">
+                                  <div class="chekBox">
+                                    <div class="form-group">
+                                      <input type="checkbox" id="html" />
+                                      <label for="html"
+                                        >My travel dates are flexible</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="cuponBox">
+                                    <div class="promoCode">
+                                      <label>Promotional Code</label><br />
+                                      <input
+                                        type="text"
+                                        id="html"
+                                        placeholder="Coupon Code"
+                                      />
+                                    </div>
+                                  </div>
+                                </form>
+
+                                <div class="rightArrow">
+                                  <a href=""
+                                    ><i class="fas fa-chevron-right"></i
+                                  ></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="select_options mx-2">
+                            <select name="passenger type" id="passengerType">
+                              <option value="passenger type">
+                                Passenger type
+                              </option>
+                              <option value="citizen">Citizen</option>
+                              <option value="foreigner">Foreigner</option>
+                              <option value="Work-Permit Holder">
+                                Work-Permit Holder
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- Travel Option End here -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Trip Option Start Here -->
+
+                  <!-- Arrival and Depart form start here -->
+                  <div
+                    id="single__trip_way"
+                    class="arrival__depart__form mx-auto single__trip_way"
+                  >
+                    <div class="row g-1">
+                      <!-- Arrival Option start here -->
+                      <div class="col-md-5 mx-auto arrival__options">
+                        <div class="inner__form">
+                          <form action="">
+                            <div class="dirc-1">
+                              <div
+                                class="arrival__option_selection form__group border-end d-flex align-self-center"
+                              >
+                                <select name="arrivla" id="arrivla_place">
+                                  <option value="">DEPARTING AIRPORT</option>
+                                  <option value="Malé Velana Intl - MLE">
+                                    Malé Velana Intl - MLE
+                                  </option>
+                                  <option value="Dharavandhoo - DRV">
+                                    Dharavandhoo - DRV
+                                  </option>
+                                  <option value="Villa Intl. Maamigili - VAM">
+                                    Villa Intl. Maamigili - VAM
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="dirc">
+                              <div class="form__group depart__option_selection">
+                                <select name="depart" id="depart_place">
+                                  <option value="DEPARTURE">
+                                    DESTINATION AIRPORT
+                                  </option>
+                                  <option value="Malé Velana Intl - MLE">
+                                    Malé Velana Intl - MLE
+                                  </option>
+                                  <option value="Dharavandhoo - DRV">
+                                    Dharavandhoo - DRV
+                                  </option>
+                                  <option value="Villa Intl. Maamigili - VAM">
+                                    Villa Intl. Maamigili - VAM
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+
+                      <!-- Arrival Option End here -->
+
+                      <!-- Depart Option start here -->
+                      <div class="col-md-5 mx-auto arrival__options">
+                        <div class="inner__form">
+                          <form action="" class="d-flex justify-content-center">
+                            <div class="dric-2">
+                              <div
+                                class="form__group date__picker border-end mx-2 d-flex"
+                              >
+                                <input type="text" placeholder="DEPART DATE" />
+                              </div>
+                            </div>
+                            <div class="dirc-3">
+                              <div class="form__group date__picker d-flex mx-2">
+                                <input type="text" placeholder="RETURN DATE" />
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-md-1 mx-auto d-flex align-self-center">
+                        <div
+                          class="inner__form mx-auto d-flex justify-content-center"
+                        >
+                          <div class="form__group mx-2 d-flex">
+                            <button class="btn btn-primary btn__search">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Depart Option End here -->
+
+                      <!-- Arrival and Depart form End here -->
+                    </div>
+                  </div>
+
+                  <!-- Multy-City selection result div -->
+                  <div id="multycity__visitor" class="multycity__visitor mx-4">
+                    <div class="arrival__depart__form mx-auto p-4">
+                      <p class="trip__info">Trip - 1</p>
+                      <div class="row">
+                        <!-- Arrival Option start here -->
+                        <div class="col-md-6 mx-auto arrival__options">
+                          <div
+                            class="inner__form mx-auto d-flex justify-content-center"
+                          >
+                            <div
+                              class="arrival__option_selection form__group border-end mx-2 d-flex align-self-center"
+                            >
+                              <form action="">
+                                <select name="arrivla" id="arrivla_place">
+                                  <option value="MLE Velana Intl">
+                                    DEPARTING AIRPORT
+                                  </option>
+                                  <option value="MLE Velana Intl">
+                                    MLE Velana Intl
+                                  </option>
+                                  <option value="Malé Velana Intl - MLE">
+                                    Malé Velana Intl - MLE
+                                  </option>
+                                  <option value="Dharavandhoo - DRV">
+                                    Dharavandhoo - DRV
+                                  </option>
+                                  <option value="Villa Intl. Maamigili - VAM">
+                                    Villa Intl. Maamigili - VAM
+                                  </option>
+                                </select>
+                              </form>
+                            </div>
+
+                            <div
+                              class="form__group depart__option_selection d-flex ms-2"
+                            >
+                              <form action="">
+                                <select name="depart" id="depart_place">
+                                  <option value="MLE Velana Intl">
+                                    DESTINATION AIRPORT
+                                  </option>
+                                  <option value="MLE Velana Intl">
+                                    MLE Velana Intl
+                                  </option>
+                                  <option value="Malé Velana Intl - MLE">
+                                    Malé Velana Intl - MLE
+                                  </option>
+                                  <option value="Dharavandhoo - DRV">
+                                    Dharavandhoo - DRV
+                                  </option>
+                                  <option value="Villa Intl. Maamigili - VAM">
+                                    Villa Intl. Maamigili - VAM
+                                  </option>
+                                </select>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Arrival Option End here -->
+
+                        <!-- Depart Option start here -->
+                        <div class="col-md-5 mx-auto arrival__options">
+                          <div
+                            class="inner__form mx-auto d-flex justify-content-center"
+                          >
+                            <div
+                              class="form__group date__picker border-end mx-2 d-flex"
+                            >
+                              <input
+                                type="date"
+                                id="depart_date"
+                                name="depart_date"
+                                value="2021-07-22"
+                                min="2021-07-22"
+                                max="2021-12-31"
+                              />
+                            </div>
+                            <div class="form__group date__picker d-flex mx-2">
+                              <form action="">
+                                <input
+                                  type="date"
+                                  id="depart_date"
+                                  name="depart_date"
+                                  value="2021-07-22"
+                                  min="2021-07-22"
+                                  max="2021-12-31"
+                                />
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Depart Option End here -->
+
+                        <!-- Arrival and Depart form End here -->
+                      </div>
+                    </div>
+                    <div class="arrival__depart__form mx-auto p-4">
+                      <p class="trip__info">Trip - 2</p>
+                      <div class="row">
+                        <!-- Arrival Option start here -->
+                        <div class="col-md-6 mx-auto arrival__options">
+                          <div
+                            class="inner__form mx-auto d-flex justify-content-center"
+                          >
+                            <div
+                              class="arrival__option_selection form__group border-end mx-2 d-flex align-self-center"
+                            >
+                              <form action="">
+                                <select name="arrivla" id="arrivla_place">
+                                  <option value="MLE Velana Intl">
+                                    DEPARTING AIRPORT
+                                  </option>
+                                  <option value="MLE Velana Intl">
+                                    MLE Velana Intl
+                                  </option>
+                                  <option value="Malé Velana Intl - MLE">
+                                    Malé Velana Intl - MLE
+                                  </option>
+                                  <option value="Dharavandhoo - DRV">
+                                    Dharavandhoo - DRV
+                                  </option>
+                                  <option value="Villa Intl. Maamigili - VAM">
+                                    Villa Intl. Maamigili - VAM
+                                  </option>
+                                </select>
+                              </form>
+                            </div>
+
+                            <div
+                              class="form__group depart__option_selection d-flex ms-2"
+                            >
+                              <form action="">
+                                <select name="depart" id="depart_place">
+                                  <option value="MLE Velana Intl">
+                                    DESTINATION AIRPORT
+                                  </option>
+                                  <option value="MLE Velana Intl">
+                                    MLE Velana Intl
+                                  </option>
+                                  <option value="Malé Velana Intl - MLE">
+                                    Malé Velana Intl - MLE
+                                  </option>
+                                  <option value="Dharavandhoo - DRV">
+                                    Dharavandhoo - DRV
+                                  </option>
+                                  <option value="Villa Intl. Maamigili - VAM">
+                                    Villa Intl. Maamigili - VAM
+                                  </option>
+                                </select>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Arrival Option End here -->
+
+                        <!-- Depart Option start here -->
+                        <div class="col-md-5 mx-auto arrival__options">
+                          <div
+                            class="inner__form mx-auto d-flex justify-content-center"
+                          >
+                            <div
+                              class="form__group date__picker border-end mx-2 d-flex"
+                            >
+                              <input
+                                type="date"
+                                id="depart_date"
+                                name="depart_date"
+                                value="2021-07-22"
+                                min="2021-07-22"
+                                max="2021-12-31"
+                              />
+                            </div>
+                            <div class="form__group date__picker d-flex mx-2">
+                              <form action="">
+                                <input
+                                  type="date"
+                                  id="depart_date"
+                                  name="depart_date"
+                                  value="2021-07-22"
+                                  min="2021-07-22"
+                                  max="2021-12-31"
+                                />
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Depart Option End here -->
+
+                        <!-- Arrival and Depart form End here -->
+                      </div>
+                    </div>
+
+                    <div class="multycity__submit">
+                      <div
+                        class="add__flight d-flex justify-content-center my-2"
+                      >
+                        <button
+                          id="adding_trip"
+                          class="btn btn-outline-light rounded-pill"
+                        >
+                          + Add Flight
+                        </button>
+                      </div>
+                      <div
+                        class="add__flight d-flex justify-content-center my-4"
+                      >
+                        <button
+                          id="add__flight__search"
+                          class="btn btn-primary rounded-pill"
+                        >
+                          Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Multy-City selection result div End -->
+                </div>
+              </div>
+
+              <!-- This Is Managing Book Div -->
+              <div id="manageDiv" class="hidden">
+                <div class="mamageinng_book__innner">
+                  <div
+                    class="mannage__iner__option d-flex justify-content-center"
+                  >
+                    <!-- add button -->
+                    <div class="search__trip d-flex">
+                      <button
+                        id="search_with_reserv_number"
+                        class="btn active rounded-pill me-2"
+                      >
+                        Reservation Number
+                      </button>
+                      <button
+                        id="search_with_ticket_number"
+                        class="btn rounded-pill ms-2"
+                      >
+                        Ticket Number
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    id="reservation__area"
+                    class="search__with__reservation mx-auto"
+                  >
+                    <div
+                      class="reservetionn__area d-flex justify-content-center align-self-center"
+                    >
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="reservation__numbber">
+                            <p>Reservation Number</p>
+                          </div>
+                          <div
+                            class="reservation__nnnumber d-flex align-self-center mx-2"
+                          >
+                            <form action="">
+                              <input type="text" placeholder="ZEN7BC" />
+                            </form>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="reservation__numbber">
+                            <p>Last Name</p>
+                          </div>
+                          <div
+                            class="reservation__number d-flex align-self-center mx-2"
+                          >
+                            <form action="">
+                              <input type="text" placeholder="NAME" />
+                            </form>
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-2 d-flex justify-content-center align-self-center"
+                        >
+                          <div class="search__submit">
+                            <button
+                              class="btn btn-primary btn__search rounded-pill"
+                            >
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="search__with__ticket"
+                    class="search__with__ticket mx-auto"
+                  >
+                    <div
+                      class="ticket__area d-flex justify-content-center align-self-center"
+                    >
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="reservation__numbber">
+                            <p>Ticket Number</p>
+                          </div>
+                          <div
+                            class="reservation__nnnumber d-flex align-self-center mx-2"
+                          >
+                            <form action="">
+                              <input type="text" placeholder="12345" />
+                            </form>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="reservation__numbber">
+                            <p>Last Name</p>
+                          </div>
+                          <div
+                            class="reservation__number d-flex align-self-center mx-2"
+                          >
+                            <form action="">
+                              <input type="text" placeholder="NAME" />
+                            </form>
+                          </div>
+                        </div>
+                        <div
+                          class="col-md-2 d-flex justify-content-center align-self-center"
+                        >
+                          <div class="search__submit">
+                            <button
+                              class="btn btn-primary btn__search rounded-pill"
+                            >
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking_form d-md-none pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-trip-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-trip"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-trip"
+                    aria-selected="true"
+                  >
+                    BOOK A TRIP
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-manage-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-manage"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-manage"
+                    aria-selected="false"
+                  >
+                    MANAGE BOOKING
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-trip"
+                  role="tabpanel"
+                  aria-labelledby="pills-trip-tab"
+                  tabindex="0"
+                >
+                  <div>
+                    <div class="mb-3 form-input-trip">
+                      <i class="fa fa-location-dot form-icon"></i>
+                      <select class="form-control">
+                        <option value="">DEPARTING AIRPORT</option>
+                        <option value="Malé Velana Intl - MLE">
+                          Malé Velana Intl - MLE
+                        </option>
+                        <option value="Dharavandhoo - DRV">
+                          Dharavandhoo - DRV
+                        </option>
+                        <option value="Villa Intl. Maamigili - VAM">
+                          Villa Intl. Maamigili - VAM
+                        </option>
+                      </select>
+                    </div>
+                    <div class="mb-3 form-input-trip">
+                      <i class="fa fa-location-dot form-icon"></i>
+                      <select class="form-control">
+                        <option value="">DESTINATION AIRPORT</option>
+                        <option value="Malé Velana Intl - MLE">
+                          Malé Velana Intl - MLE
+                        </option>
+                        <option value="Dharavandhoo - DRV">
+                          Dharavandhoo - DRV
+                        </option>
+                        <option value="Villa Intl. Maamigili - VAM">
+                          Villa Intl. Maamigili - VAM
+                        </option>
+                      </select>
+                    </div>
+                    <div class="mb-3 form-input-trip d-flex" id="one-way">
+                      <div class="input-group">
+                        <i class="fa fa-calendar-alt form-icon"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="DEPART DATE"
+                        />
+                      </div>
+                      <div class="input-group d-none" id="round-trip">
+                        <i class="fa fa-calendar-alt form-icon"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="RETURN DATE"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="mb-3 form-input-trip d-flex form-input-trip-multi"
+                    >
+                      <div class="input-group">
+                        <div
+                          id="qunt_travelr_mobile"
+                          class="form-control text-uppercase"
+                        >
+                          <i class="fa fa-user-alt form-icon"></i>Select
+                          Passenger
+                        </div>
+                      </div>
+                      <div
+                        id="pesengerSelectbox_mobile"
+                        class="pesengerCounter d-none"
+                      >
+                        <div class="pessengerAge">
+                          <div
+                            class="pSingleCount d-flex justify-content-between align-items-center"
+                          >
+                            <div class="pTitle">ADULT(S)</div>
+                            <div class="pCounter d-flex align-items-center">
+                              <span class="countIcon minus-btn"
+                                ><i class="fas fa-minus"></i
+                              ></span>
+                              <input class="countInput" type="text" name="name" value="1">
+                              <span class="countIcon plus-btn"
+                                ><i class="fas fa-plus"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="pessengerAge">
+                          <div
+                            class="pSingleCount d-flex justify-content-between align-items-center"
+                          >
+                            <div class="pTitle">
+                              CHILD(REN)<br /><span
+                                >From 2 to 12 year(s) old</span
+                              >
+                            </div>
+                            <div class="pCounter d-flex align-items-center">
+                              <span class="countIcon minus-btn"
+                                ><i class="fas fa-minus"></i
+                              ></span>
+                              <input class="countInput" type="text" name="name" value="1">
+                              <span class="countIcon plus-btn"
+                                ><i class="fas fa-plus"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pessengerAge">
+                          <div
+                            class="pSingleCount d-flex justify-content-between align-items-center"
+                          >
+                            <div class="pTitle">
+                              INFANT(S)<br /><span>Until 2 year(s) old</span>
+                            </div>
+                            <div class="pCounter d-flex align-items-center">
+                              <span class="countIcon disabled"
+                                ><i class="fas fa-minus"></i
+                              ></span>
+                              <input class="countInput" type="text" name="name" value="1">
+                              <span class="countIcon plus-btn"
+                                ><i class="fas fa-plus"></i
+                              ></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <form class="pesengerCheck_Cupon">
+                          <div class="chekBox">
+                            <div class="form-group">
+                              <input type="checkbox" id="html" />
+                              <label for="html"
+                                >My travel dates are flexible</label
+                              >
+                            </div>
+                          </div>
+                          <div class="cuponBox">
+                            <div class="promoCode">
+                              <label>Promotional Code</label><br />
+                              <input
+                                type="text"
+                                id="html"
+                                placeholder="Coupon Code"
+                              />
+                            </div>
+                          </div>
+                        </form>
+
+                        <div class="rightArrow">
+                          <a href=""><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <i class="fa fa-globe form-icon"></i>
+                        <select class="form-control">
+                          <option value="">PASSENGER TYPE</option>
+                          <option value="citizen">Citizen</option>
+                          <option value="foreigner">Foreigner</option>
+                          <option value="Work-Permit Holder">
+                            Work-Permit Holder
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="new-multi-city"></div>
+                  <i
+                    class="multi-icon d-flex fa fa-plus justify-content-center d-none"
+                    id="addMultiCity"
+                  ></i>
+                  <div
+                    class="d-flex gap-4 justify-content-center btn-toggler btn-toggler-trip"
+                  >
+                    <a
+                      class="btn btn-outline-light active"
+                      data-target="one-way"
+                      >One Way</a
+                    >
+                    <a class="btn btn-outline-light" data-target="round-trip"
+                      >Round Trip</a
+                    >
+                    <a class="btn btn-outline-light" data-target="multi-city"
+                      >Multi-City</a
+                    >
+                  </div>
+                  <button class="btn btn-search d-flex m-auto">Search</button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-manage"
+                  role="tabpanel"
+                  aria-labelledby="pills-manage-tab"
+                  tabindex="0"
+                >
+                  <div
+                    class="d-flex gap-4 justify-content-center btn-toggler btn-toggler-manage"
+                  >
+                    <a
+                      class="btn btn-outline-light active"
+                      data-target="reservation"
+                      >Reservation Number</a
+                    >
+                    <a class="btn btn-outline-light" data-target="ticket"
+                      >Ticket Number</a
+                    >
+                  </div>
+                  <div class="mb-3 form-input" id="reservation">
+                    <label>Reservations Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="ZEN7BC"
+                    />
+                  </div>
+                  <div class="mb-3 form-input d-none" id="ticket">
+                    <label>Ticket Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="0123456789123"
+                    />
+                  </div>
+                  <div class="mb-3 form-input">
+                    <label>Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- All js file CDN link  -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom js file -->
+    <script src="./assets/js/custom.js"></script>
+    <script>
+      $(".btn-toggler-manage .btn").click(function () {
+        const toggle_btns = document.querySelectorAll(
+          ".btn-toggler-manage .btn"
+        );
+        toggle_btns.forEach((f) => f.classList.remove("active"));
+        this.classList.toggle("active");
+
+        const target_btns = $(this).attr("data-target");
+        if (target_btns === "ticket") {
+          document.getElementById("reservation").classList.add("d-none");
+          document.getElementById(target_btns).classList.remove("d-none");
+        } else {
+          document.getElementById("reservation").classList.remove("d-none");
+          document.getElementById("ticket").classList.add("d-none");
+        }
+      });
+
+      $(".btn-toggler-trip .btn").click(function () {
+        const toggle_btns = document.querySelectorAll(".btn-toggler-trip .btn");
+        toggle_btns.forEach((f) => f.classList.remove("active"));
+        this.classList.toggle("active");
+
+        const target_btns = $(this).attr("data-target");
+        document.getElementById("addMultiCity").classList.add("d-none");
+        if (target_btns === "round-trip") {
+          document.querySelector("#new-multi-city").innerHTML = "";
+          roundTrip(target_btns);
+        } else if (target_btns === "one-way") {
+          document.querySelector("#new-multi-city").innerHTML = "";
+          document.getElementById("round-trip").classList.add("d-none");
+          document
+            .getElementById(target_btns)
+            .classList.remove("form-input-trip-multi");
+        } else {
+          roundTrip("round-trip");
+          multiForm();
+          document.getElementById("addMultiCity").classList.remove("d-none");
+        }
+      });
+
+      function roundTrip(target_btns) {
+        document.getElementById(target_btns).classList.remove("d-none");
+        document
+          .getElementById("one-way")
+          .classList.add("form-input-trip-multi");
+      }
+
+      function multiForm() {
+        newRowAdd =
+          '<i id="removeMultiCity" class="multi-icon d-flex fa fa-minus justify-content-center"></i><div> <div class="mb-3 form-input-trip"> <i class="fa fa-location-dot form-icon"></i> <select class="form-control"> <option value="">DEPARTING AIRPORT</option> <option value="Malé Velana Intl - MLE"> Malé Velana Intl - MLE </option> <option value="Dharavandhoo - DRV"> Dharavandhoo - DRV </option> <option value="Villa Intl. Maamigili - VAM"> Villa Intl. Maamigili - VAM </option> </select> </div><div class="mb-3 form-input-trip"> <i class="fa fa-location-dot form-icon"></i> <select class="form-control"> <option value="">DESTINATION AIRPORT</option> <option value="Malé Velana Intl - MLE"> Malé Velana Intl - MLE </option> <option value="Dharavandhoo - DRV"> Dharavandhoo - DRV </option> <option value="Villa Intl. Maamigili - VAM"> Villa Intl. Maamigili - VAM </option> </select> </div><div class="mb-3 form-input-trip d-flex" id="one-way"> <div class="input-group"> <i class="fa fa-calendar-alt form-icon"></i> <input type="text" class="form-control" placeholder="DEPART DATE"/> </div><div class="input-group d-none" id="round-trip"> <i class="fa fa-calendar-alt form-icon"></i> <input type="text" class="form-control" placeholder="RETURN DATE"/> </div></div><div class="mb-3 form-input-trip d-flex form-input-trip-multi" > <div class="input-group"> <div id="qunt_travelr_mobile" class="form-control text-uppercase" > <i class="fa fa-user-alt form-icon"></i>Select Passenger </div></div><div id="pesengerSelectbox_mobile" class="pesengerCounter d-none" > <div class="pessengerAge"> <div class="pSingleCount d-flex justify-content-between align-items-center" > <div class="pTitle">ADULT(S)</div><div class="pCounter d-flex align-items-center"> <span class="countIcon" ><i class="fas fa-minus"></i ></span> <span>1</span> <span class="countIcon" ><i class="fas fa-plus"></i ></span> </div></div></div><div class="pessengerAge"> <div class="pSingleCount d-flex justify-content-between align-items-center" > <div class="pTitle"> CHILD(REN)<br/><span >From 2 to 12 year(s) old</span > </div><div class="pCounter d-flex align-items-center"> <span class="countIcon" ><i class="fas fa-minus"></i ></span> <span>1</span> <span class="countIcon" ><i class="fas fa-plus"></i ></span> </div></div></div><div class="pessengerAge"> <div class="pSingleCount d-flex justify-content-between align-items-center" > <div class="pTitle"> INFANT(S)<br/><span>Until 2 year(s) old</span> </div><div class="pCounter d-flex align-items-center"> <span class="countIcon disabled" ><i class="fas fa-minus"></i ></span> <span>1</span> <span class="countIcon" ><i class="fas fa-plus"></i ></span> </div></div></div><form class="pesengerCheck_Cupon"> <div class="chekBox"> <div class="form-group"> <input type="checkbox" id="html"/> <label for="html" >My travel dates are flexible</label > </div></div><div class="cuponBox"> <div class="promoCode"> <label>Promotional Code</label><br/> <input type="text" id="html" placeholder="Coupon Code"/> </div></div></form> <div class="rightArrow"> <a href=""><i class="fas fa-chevron-right"></i></a> </div></div><div class="input-group"> <i class="fa fa-globe form-icon"></i> <select class="form-control"> <option value="">PASSENGER TYPE</option> <option value="citizen">Citizen</option> <option value="foreigner">Foreigner</option> <option value="Work-Permit Holder"> Work-Permit Holder </option> </select> </div></div></div>';
+        $("#new-multi-city").append(newRowAdd);
+      }
+
+      $("#addMultiCity").click(function () {
+        multiForm();
+      });
+
+
+      $('.minus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value > 1) {
+    			value = value - 1;
+    		} else {
+    			value = 0;
+    		}
+
+        $input.val(value);
+
+    	});
+
+    	$('.plus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value < 100) {
+      		value = value + 1;
+    		} else {
+    			value =100;
+    		}
+
+    		$input.val(value);
+    	});
+    </script>
+  </body>
+</html>
